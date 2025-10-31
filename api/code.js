@@ -34,7 +34,7 @@ export default async function handler(req, res) {
 
     // ✅ 4. Fetch your ready-made email HTML from GitHub
     const GITHUB_EMAIL_URL =
-      "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/email-template.html"; // ⬅️ Replace this
+      "https://https://raw.githubusercontent.com/PratikDilipGade/PratikGade/refs/heads/main/email.txt"; // ⬅️ Replace this
     const emailTemplate = await fetch(GITHUB_EMAIL_URL).then((r) => r.text());
 
     // ✅ 5. Personalize email content
@@ -89,3 +89,4 @@ export const handler = async (event) => {
   };
   return await handler(req, res);
 };
+
